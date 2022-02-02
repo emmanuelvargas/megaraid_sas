@@ -1,6 +1,6 @@
 #!/bin/bash
 
-URL="https://github.com/npf/megaraid_sas/raw/master"
+URL="https://github.com/emmanuelvargas/megaraid_sas/raw/master"
 for path in ../deb/*amd64.deb; do
   file=${path##*/}
   t=${file#megaraid-sas-modules-}
