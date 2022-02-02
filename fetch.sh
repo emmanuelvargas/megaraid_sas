@@ -86,7 +86,7 @@ if [[ $URL =~ ^https://.+\.dell\.com/ ]]; then
   [[ $DRV_ARCHIVE =~ ^/ ]] && die "DRV_ARCHIVE file path is not expected not begins with /"
   echo "DRV_ARCHIVE=$DRV_ARCHIVE"
   tar -xvf $ALIEN_TGZ
-  rm $ALIEN_TGZ megaraid_sas.{conf,files,spec}
+  rm $ALIEN_TGZ megaraid_sas.{conf,spec}
   
   echo "Extract driver files from archive..."
   tar --strip-components=1 -xvf $DRV_ARCHIVE
